@@ -32,7 +32,7 @@ namespace NS_SLUA {
     using FVector2 = UE::Math::TVector2<FVector::FReal>;
 #if (ENGINE_MINOR_VERSION==3)
     #include "LuaWrapper5.3Head.inc"
-#elif (ENGINE_MINOR_VERSION==4)
+#elif (ENGINE_MINOR_VERSION>=4)
     #include "LuaWrapper5.4Head.inc"
 #endif
 #endif

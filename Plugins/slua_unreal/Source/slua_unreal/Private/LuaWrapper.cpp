@@ -62,7 +62,7 @@ namespace NS_SLUA {
     #include "LuaWrapper5.2.inc"
 #elif ((ENGINE_MINOR_VERSION==3) && (ENGINE_MAJOR_VERSION==5))
     #include "LuaWrapper5.3.inc"
-#elif ((ENGINE_MINOR_VERSION==4) && (ENGINE_MAJOR_VERSION==5))
+#elif ((ENGINE_MINOR_VERSION>=4) && (ENGINE_MAJOR_VERSION==5))
     #include "LuaWrapper5.4.inc"
 #endif
 
