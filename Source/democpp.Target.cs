@@ -8,10 +8,8 @@ public class democppTarget : TargetRules
 	public democppTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
-#if UE_5_4_OR_LATER
-		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
-		WindowsPlatform.bStrictConformanceMode = true;
-#endif
+		DefaultBuildSettings = BuildSettingsVersion.V5;
+		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_5;	
 
 		bUsePCHFiles = false;
 		ExtraModuleNames.AddRange( new string[] { "democpp" } );

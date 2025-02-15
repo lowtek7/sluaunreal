@@ -8,10 +8,8 @@ public class democppEditorTarget : TargetRules
 	public democppEditorTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
-#if UE_5_4_OR_LATER
-		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
-		WindowsPlatform.bStrictConformanceMode = true;
-#endif
+		DefaultBuildSettings = BuildSettingsVersion.V5;
+		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_5;
 
 		ExtraModuleNames.AddRange( new string[] { "democpp" } );
 	}
